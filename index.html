@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="main">
+        <div id="progress">
+            <div id="date-container">
+                <p id="start-date-text">
+
+                </p>
+                <p id="end-date-text">
+
+                </p>
+            </div>
+            <div id="event-title-container">
+                <p id="event-title">
+                    This year
+                </p>
+            </div>
+            <div id="progress-bar">
+                <progress id="bar" max="100" value="49.4147023396164"></progress>
+
+            </div>
+            <div id="percentage">
+                <p id="percentage-done"></p>
+                <p id="percentage-left"></p>
+            </div>
+            <button id="change-btn" onclick="showInputHideProgress()">Change</button>
+        </div>
+        <div id="input-box">
+            <label for="event">Event Name</label>
+            <input type="text" id="event">
+            <label for="start-date">Start Date</label>
+            <input type="date" id="start-date" value="2023-01-01">
+            <label for="end-date">End Date</label>
+            <input type="date" id="end-date" value="2023-12-01">
+            <div id="buttons">
+                <button id="submit" onclick="setEventTitle()">Submit</button>
+                <button id="cancel" onclick="showProgressHideInput()">Cancel</button>
+            </div>
+        </div>
+        <div id="timer">
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
